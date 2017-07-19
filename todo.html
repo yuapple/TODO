@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <title>todo</title>
+        <link href="bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="jquery.min.js"></script>
+        <style>
+            .body {
+                background-color: blue;
+                background-image:
+            }
+            .containner{
+                font-size: 20px;
+            }
+            .input-group {
+                margin-top: 120px;
+                margin-bottom: 90px;
+                background-color: #27ae60;
+                margin-top: 40px;
+                /*outline: 1px solid red;*/
+            }
+            .input-add {
+                background-color: #27ae60;
+                margin-top: -20px;
+            }
+            .done {
+                color: red;
+                font-size: 17px;
+            }
+            .todo-cell-todo:hover {
+                background-color: #ffede7;
+            }
+            .btn-group {
+                position: absolute;
+                right: 0px;
+                margin: -10px auto;
+                margin-right: -45px;
+            }
+            .todo-edit-button:hover{
+                background-color:#00c4a8;
+            }
+            .todo-delete-button:hover{
+                background-color: red;
+            }
+            .todo-complete-button:hover{
+                background-color:#5cb85c;
+            }
+            .h1-header {
+                color: white;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 15px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="containner">
+            <div class="input-add">
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4 h1-header">
+                        <h1>高效TODO</h1>
+                        <span>跟上时间的步伐 做时间的主人 做高效的事情</span>
+                    </div>
+                    </div>
+
+                <div class="row">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="input-group input-group-lg">
+                            <input id="id-todo-input" class="form-control" name="name" value="" placeholder="在此处写下你的计划吧" aria-describedby="basic-addon2" style="font-size: 20px">
+                            <span class="input-todo-add input-group-addon btn btn-success" id="basic-addon2">GO!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="todo-containner">
+
+            </div>
+        </div>
+
+        <script src='todo2.js'></script>
+    </body>
+</html>
